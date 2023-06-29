@@ -1,0 +1,90 @@
+*design* DebussyLib (btIdent Verdi_O-2018.09-SP2)
+Command arguments:
+    +define+verilog
+    ../sim/CPU_top_tb.v
+    ../source/ALU.v
+    ../source/Control_unit.v
+    ../source/CPU_top.v
+    ../source/Data_MEM.v
+    ../source/EX2MEM_reg.v
+    ../source/ID2EX_reg.v
+    ../source/IF2ID_reg.v
+    ../source/Instruction_MEM.v
+    ../source/MEM2WB_reg.v
+    ../source/PC_next.v
+    ../source/PC.v
+    ../source/Register_MEM.v
+
+
+*Error* `include file "Instruction_MEM.v" cannot be read
+"../source/CPU_top.v", 22: 
+
+*Error* `include file "ALU.v" cannot be read
+"../source/CPU_top.v", 23: 
+
+*Error* `include file "Control_unit.v" cannot be read
+"../source/CPU_top.v", 24: 
+
+*Error* `include file "Data_MEM.v" cannot be read
+"../source/CPU_top.v", 25: 
+
+*Error* `include file "PC.v" cannot be read
+"../source/CPU_top.v", 26: 
+
+*Error* `include file "PC_next.v" cannot be read
+"../source/CPU_top.v", 27: 
+
+*Error* `include file "Register_MEM.v" cannot be read
+"../source/CPU_top.v", 28: 
+
+*Error* `include file "IF2ID_reg.v" cannot be read
+"../source/CPU_top.v", 29: 
+
+*Error* `include file "ID2EX_reg.v" cannot be read
+"../source/CPU_top.v", 30: 
+
+*Error* `include file "EX2MEM_reg.v" cannot be read
+"../source/CPU_top.v", 31: 
+
+*Error* `include file "MEM2WB_reg.v" cannot be read
+"../source/CPU_top.v", 32: 
+
+*Error* `include file "Instruction_MEM.v" cannot be read
+"../source/CPU_top.v", 22: 
+
+*Error* `include file "ALU.v" cannot be read
+"../source/CPU_top.v", 23: 
+
+*Error* `include file "Control_unit.v" cannot be read
+"../source/CPU_top.v", 24: 
+
+*Error* `include file "Data_MEM.v" cannot be read
+"../source/CPU_top.v", 25: 
+
+*Error* `include file "PC.v" cannot be read
+"../source/CPU_top.v", 26: 
+
+*Error* `include file "PC_next.v" cannot be read
+"../source/CPU_top.v", 27: 
+
+*Error* `include file "Register_MEM.v" cannot be read
+"../source/CPU_top.v", 28: 
+
+*Error* `include file "IF2ID_reg.v" cannot be read
+"../source/CPU_top.v", 29: 
+
+*Error* `include file "ID2EX_reg.v" cannot be read
+"../source/CPU_top.v", 30: 
+
+*Error* `include file "EX2MEM_reg.v" cannot be read
+"../source/CPU_top.v", 31: 
+
+*Error* `include file "MEM2WB_reg.v" cannot be read
+"../source/CPU_top.v", 32: 
+
+*Error* Module CPU_top redefined
+"../source/CPU_top.v", 34: 
+Highest level modules:
+CPU_top_tb
+
+Total	23 error(s),   0 warning(s)

@@ -1,0 +1,92 @@
+debImport "../sim/CPU_top_tb.v" "../source/ALU.v" "../source/Control_unit.v" \
+          "../source/CPU_top.v" "../source/Data_MEM.v" \
+          "../source/EX2MEM_reg.v" "../source/ID2EX_reg.v" \
+          "../source/IF2ID_reg.v" "../source/Instruction_MEM.v" \
+          "../source/MEM2WB_reg.v" "../source/PC_next.v" "../source/PC.v" \
+          "../source/Register_MEM.v"
+debLoadSimResult \
+           /home/yihui/Desktop/Digital_Design/Pipeline_MIPS_CPU/prj_file/CPU_top_tb.fsdb
+wvCreateWindow
+schCreateWindow -delim "." -win $_nSchema1 -scope "CPU_top_tb"
+verdiDockWidgetMaximize -dock windowDock_nSchema_3
+schSelect -win $_nSchema3 -inst "u_CPU_top"
+schPushViewIn -win $_nSchema3
+schSetOptions -win $_nSchema3 -pinName on
+schSetOptions -win $_nSchema3 -detailRTL on
+schSetOptions -win $_nSchema3 -detailRTL off
+schSetOptions -win $_nSchema3 -highContrastMode on
+schSetOptions -win $_nSchema3 -highContrastMode off
+verdiCaptureWindow -win $_nSchema_3
+verdiCloseDialog -win $_nSchema_3 -widget capturePreview
+schZoomIn -win $_nSchema3 -pos 16589 10098
+schZoomIn -win $_nSchema3 -pos 16588 10098
+schZoomIn -win $_nSchema3 -pos 16588 10098
+schZoomIn -win $_nSchema3 -pos 16587 10097
+schZoomIn -win $_nSchema3 -pos 16587 10097
+schZoomIn -win $_nSchema3 -pos 16587 10097
+schZoomIn -win $_nSchema3 -pos 16586 10097
+schZoomIn -win $_nSchema3 -pos 16585 10097
+schZoomIn -win $_nSchema3 -pos 16585 10096
+schZoomOut -win $_nSchema3 -pos 16586 10096
+schZoomOut -win $_nSchema3 -pos 16585 10096
+schZoomOut -win $_nSchema3 -pos 16585 10096
+schZoomOut -win $_nSchema3 -pos 16586 10096
+schZoomOut -win $_nSchema3 -pos 16586 10095
+schZoomOut -win $_nSchema3 -pos 16586 10095
+schZoomOut -win $_nSchema3 -pos 16586 10095
+schZoomOut -win $_nSchema3 -pos 16586 10095
+schZoomOut -win $_nSchema3 -pos 18989 8592
+schZoomOut -win $_nSchema3 -pos 18990 8551
+schZoomOut -win $_nSchema3 -pos 18990 8550
+schZoomOut -win $_nSchema3 -pos 18990 8549
+schZoomIn -win $_nSchema3 -pos 90948 10424
+schZoomIn -win $_nSchema3 -pos 90948 10423
+schZoomIn -win $_nSchema3 -pos 90948 10423
+schZoomIn -win $_nSchema3 -pos 90947 10423
+schZoomOut -win $_nSchema3 -pos 87053 8153
+schZoomOut -win $_nSchema3 -pos 87053 8153
+schZoomOut -win $_nSchema3 -pos 87052 8153
+schZoomOut -win $_nSchema3 -pos 87051 8153
+schZoomOut -win $_nSchema3 -pos 87051 8154
+schZoomOut -win $_nSchema3 -pos 87050 8153
+schZoomOut -win $_nSchema3 -pos 87050 8153
+schSetOptions -win $_nSchema3 -autoFit on
+schSetPreference -fixFontSize on
+simSetInteractiveFsdbFile inter.fsdb
+simSetSimMode on
+srcSetPreference -filterPowerAwareInstruments off -profileTime off
+tbvSetPreference -dynamicDumpMDA 1 -dynamicDumpStruct 1 -dynamicDumpSystemCStruct \
+           1 -dynamicDumpSystemCPlain 1 -dynamicDumpSystemCFIFO 1
+schZoomIn -win $_nSchema3 -pos 56682 -84
+schZoomIn -win $_nSchema3 -pos 60370 1021
+schZoomIn -win $_nSchema3 -pos 60369 1021
+schZoomIn -win $_nSchema3 -pos 60369 1021
+schZoomOut -win $_nSchema3 -pos 60369 1021
+schZoomOut -win $_nSchema3 -pos 60369 1020
+schZoomOut -win $_nSchema3 -pos 60369 1020
+schZoomOut -win $_nSchema3 -pos 60369 1021
+schZoomIn -win $_nSchema3 -pos 145369 23719
+schZoomIn -win $_nSchema3 -pos 145368 23718
+schZoomIn -win $_nSchema3 -pos 145369 23718
+schZoomIn -win $_nSchema3 -pos 135473 20833
+schZoomIn -win $_nSchema3 -pos 135473 20833
+schZoomIn -win $_nSchema3 -pos 135473 20833
+schZoomIn -win $_nSchema3 -pos 135946 20072
+schZoomIn -win $_nSchema3 -pos 135947 20072
+schZoomIn -win $_nSchema3 -pos 135948 20072
+schZoomOut -win $_nSchema3 -pos 135947 20078
+schZoomOut -win $_nSchema3 -pos 135946 20078
+schZoomOut -win $_nSchema3 -pos 135945 20078
+schZoomOut -win $_nSchema3 -pos 135945 20078
+schZoomOut -win $_nSchema3 -pos 135943 20078
+schZoomOut -win $_nSchema3 -pos 135943 20078
+schZoomOut -win $_nSchema3 -pos 135942 20078
+schZoomOut -win $_nSchema3 -pos 135941 20077
+schFit -win $_nSchema3
+schSetPreference -magnifierRatio x16
+schSetPreference -magnifierRatio x2
+schSetPreference -magnifierSize large
+schSetPreference -fixFontSize off -magnifierSize medium
+schSetPreference -fixFontSize on
+schCloseWindow -win $_nSchema3
+debExit

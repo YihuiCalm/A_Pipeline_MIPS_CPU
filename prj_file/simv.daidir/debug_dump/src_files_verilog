@@ -1,0 +1,13 @@
+/home/yihui/Desktop/Digital_Design/Pipeline_MIPS_CPU/sim/CPU_top_tb.v
+/home/yihui/Desktop/Digital_Design/Pipeline_MIPS_CPU/source/ALU.v
+/home/yihui/Desktop/Digital_Design/Pipeline_MIPS_CPU/source/CPU_top.v
+/home/yihui/Desktop/Digital_Design/Pipeline_MIPS_CPU/source/Control_unit.v
+/home/yihui/Desktop/Digital_Design/Pipeline_MIPS_CPU/source/Data_MEM.v
+/home/yihui/Desktop/Digital_Design/Pipeline_MIPS_CPU/source/EX2MEM_reg.v
+/home/yihui/Desktop/Digital_Design/Pipeline_MIPS_CPU/source/ID2EX_reg.v
+/home/yihui/Desktop/Digital_Design/Pipeline_MIPS_CPU/source/IF2ID_reg.v
+/home/yihui/Desktop/Digital_Design/Pipeline_MIPS_CPU/source/Instruction_MEM.v
+/home/yihui/Desktop/Digital_Design/Pipeline_MIPS_CPU/source/MEM2WB_reg.v
+/home/yihui/Desktop/Digital_Design/Pipeline_MIPS_CPU/source/PC.v
+/home/yihui/Desktop/Digital_Design/Pipeline_MIPS_CPU/source/PC_next.v
+/home/yihui/Desktop/Digital_Design/Pipeline_MIPS_CPU/source/Register_MEM.v
