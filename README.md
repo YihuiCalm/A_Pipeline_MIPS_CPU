@@ -145,11 +145,12 @@ For there types of instructions, they have formats of 32-bits below:
 ***  
 ## **Pipeline CPU Architecture**  
 The Architecture Design references the [CSE378](https://courses.cs.washington.edu/courses/cse378/) of UW:
-![image](https://github.com/YihuiCalm/A-Single-Cycle-MIPS-CPU/assets/96307958/7e28483e-c65b-4df2-938b-59833503e76f)
+![image](https://github.com/YihuiCalm/Pipeline_MIPS_CPU/assets/96307958/344fa823-eade-4bb6-9528-d14af178b149)
+This image only shows the basic pipeline structure without the hazard units.
 ## **Hazard**
-* **Structural Hazard**: To avoid the conflcit of reading and writing data on register at the same cycle, the register will be written at negtive edge of `clk`, and the read process will occur at positive edge. 
-* **Data Hazard**: To avoid the data hazard caused by `lw` instruction, "bubbles" will be inserted to the pipeline, that means the ID/EX register will be reset for a cycle when this kind of hazard happends. For other kinds of hazard, data will be forwarded from the latest stage.
-* **Control Hazard**: The pipeline will simply flush when a `beq` or a `j` happend to avoid the control hazard.
+* **Structural Hazard**: To avoid the conflict of reading and writing data on the register at the same cycle, the register will be written at negative edge of `clk`, and the reading process will occur at the positive edge. 
+* **Data Hazard**: To avoid the data hazard caused by the `lw` instruction, "bubbles" will be inserted into the pipeline, which means the ID/EX register will be reset for a cycle when this kind of hazard happens. Data from the latest stage will be forwarded for other kinds of hazards.
+* **Control Hazard**: The pipeline will flush when a `beq` or a `j` happens to avoid the control hazard.
 
 
 ***
@@ -402,7 +403,9 @@ mem[8] = 32'h08000018; // j 6
 mem[9] = 32'h08000024; // j 9
 ```
 The program will end in a dead loop. The simulation result is as followed:  
-![Screenshot (15)](https://github.com/YihuiCalm/A-Single-Cycle-MIPS-CPU/assets/96307958/f5a546e8-5615-40e8-95c4-a82657b41bce)
+![Screenshot (16)](https://github.com/YihuiCalm/Pipeline_MIPS_CPU/assets/96307958/f2c03874-956b-4bb9-9a84-0ebfb09c6e58)
+
+
 
 
 
