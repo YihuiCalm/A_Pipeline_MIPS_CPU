@@ -5,16 +5,16 @@
         "module",
         1
     ],
-    "CPU_top_tb": [
-        "CPU_top_tb",
-        "Jp7iU",
-        "module",
-        2
-    ],
     "...MASTER...": [
         "SIM",
         "amcQw",
         "module",
         3
+    ],
+    "CPU_top_tb": [
+        "CPU_top_tb",
+        "Jp7iU",
+        "module",
+        2
     ]
 }

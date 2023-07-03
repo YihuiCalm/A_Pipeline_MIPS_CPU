@@ -10,6 +10,7 @@ module ID2EX_reg (
     input [4:0] reg_write_address_2_next,
     input [31:0] jump_address_next,
     input [4:0] register_1_addr_next, register_2_addr_next,
+    input stall,
 
     output reg [3:0] op_type = 0,
     output reg [31:0] address = 0,
@@ -24,7 +25,7 @@ module ID2EX_reg (
 );
     
     always @(posedge clk) begin
-        if (reset) begin
+        if (reset|stall) begin
             op_type <= 0;
             address <= 0;
             register_1 <= 0;

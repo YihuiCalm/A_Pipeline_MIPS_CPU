@@ -1,0 +1,14 @@
+../source/Instruction_MEM.v
+../source/CPU_top.v
+../source/PC.v
+../source/Register_MEM.v
+../source/Data_MEM.v
+../source/PC_next.v
+../source/IF2ID_reg.v
+../source/Control_unit.v
+../sim/CPU_top_tb.v
+../source/ALU.v
+../source/MEM2WB_reg.v
+../source/CPU_top.v
+../source/ID2EX_reg.v
+../source/EX2MEM_reg.v

@@ -21,7 +21,7 @@ module register_MEM(
     	end
     end
     
-    always @(posedge clk) begin
+    always @(negedge clk) begin
     	if (write_enable) registers[write_register] = write_data;
     end
     

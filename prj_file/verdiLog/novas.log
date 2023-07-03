@@ -8,3 +8,39 @@ This software may only be used in accordance with the terms and conditions of a 
 All other use, reproduction, or distribution of this software is strictly prohibited.
 
 
+Total number of converted HDL2CELL cells=0 (normal modules=0)
+Inferring module CPU_top, file ../source/CPU_top.v, line 15~227 (Verilog)
+
+
+Verdi design analysis: total error(s) 0, total warning(s) 0.
+Inferring module ID2EX_reg, file ../source/ID2EX_reg.v, line 1~54 (Verilog)
+
+
+Verdi design analysis: total error(s) 0, total warning(s) 0.
+Inferring module IF2ID_reg, file ../source/IF2ID_reg.v, line 2~24 (Verilog)
+
+
+Verdi design analysis: total error(s) 0, total warning(s) 0.
+Inferring module CPU_top_tb, file ../sim/CPU_top_tb.v, line 24~46 (Verilog)
+
+Warning!(BA-38) "../sim/CPU_top_tb.v", Line: 39~39
+'always' statement is inferred as a black box because of no sensitivity list.
+
+Module CPU_top_tb, File ../sim/CPU_top_tb.v, Line 24~46, Total error(s) 0, warning(s) 1
+
+
+Verdi design analysis: total error(s) 0, total warning(s) 1.
+---- Any errors/warnings, please refer to file /home/yihui/Desktop/Digital_Design/Pipeline_MIPS_CPU/prj_file/verdiLog/novas.log -----------------------
+[Symbol Library from default setting]
+  library Path = /home/yihui/synopsys/verdi/verdi/Verdi_O-2018.09-SP2/share/symlib/64
+  library Name = default_u
+[Symbol Library from manual setting]
+  There are 0 library path(s) and 0 library name(s):
+
+
+The signal 'CPU_top_tb.u_CPU_top.inst_ID2EX_reg.extended_immi' is not expandable at time 0.
+Value changes do not exist on fan-ins or the tracing already reached the minimum FSDB start time.
+    "tsNodeInfo_t::getExpandableReason","vtn name=extended_immi time=0"
+The signal 'CPU_top_tb.u_CPU_top.inst_ID2EX_reg.extended_immi' is not expandable at time 0.
+Value changes do not exist on fan-ins or the tracing already reached the minimum FSDB start time.
+    "tsNodeInfo_t::getExpandableReason","vtn name=extended_immi time=0"

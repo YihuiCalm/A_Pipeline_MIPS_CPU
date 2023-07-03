@@ -2,7 +2,7 @@ Magic 271485
 Revision Verdi_O-2018.09-SP2
 
 ; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
-viewPort 0 27 1920 992 232 65
+viewPort 0 27 1440 692 232 65
 
 ; File list:
 ; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
@@ -17,15 +17,15 @@ signalSpacing 5
 ; windowTimeUnit is used for zoom, cursor & marker
 ; waveform viewport range
 zoom 0.000000 919100.000000
-cursor 0.000000
+cursor 50000.000000
 marker 0.000000
 
 ; user define markers
 ; userMarker time_pos marker_name color linestyle
 ; visible top row signal index
-top 0
+top 1
 ; marker line index
-markerPos 6
+markerPos 23
 
 ; event list
 ; addEvent event_name event_expression
@@ -53,6 +53,7 @@ addSignal -h 15 -holdScope jump_enable
 addSignal -h 15 -UNSIGNED -UDEC -holdScope jump_inst_addr_MEM[31:0]
 addSignal -h 15 -holdScope shift_enable
 addSignal -h 15 -UNSIGNED -UDEC -holdScope shifted_address_MEM[31:0]
+addSignal -h 15 -holdScope stall
 addGroup "G2"
 addSignal -h 15 -UNSIGNED -BIN /CPU_top_tb/u_CPU_top/op_type_ID[3:0]
 addSignal -h 15 -UNSIGNED -UDEC -holdScope extended_immi_ID[31:0]
@@ -65,7 +66,10 @@ addGroup "G3"
 addSignal -h 15 -UNSIGNED -BIN /CPU_top_tb/u_CPU_top/op_type_EX[3:0]
 addSignal -h 15 -holdScope alu_data_1[31:0]
 addSignal -h 15 -holdScope alu_data_2[31:0]
+addSignal -h 15 -holdScope read_register_1_EX[4:0]
+addSignal -h 15 -holdScope read_register_2_EX[4:0]
 addSignal -h 15 -holdScope alu_result_EX[31:0]
+addSignal -h 15 -holdScope reg_write_address_EX[4:0]
 addSignal -h 15 -UNSIGNED -UDEC -holdScope extended_immi_EX[31:0]
 addGroup "G4"
 addSignal -h 15 -UNSIGNED -BIN /CPU_top_tb/u_CPU_top/op_type_MEM[3:0]

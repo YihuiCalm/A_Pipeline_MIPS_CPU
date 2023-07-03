@@ -17,73 +17,73 @@ Command arguments:
 
 
 *Error* `include file "Instruction_MEM.v" cannot be read
-"../source/CPU_top.v", 22: 
+"../source/CPU_top.v", 3: 
 
 *Error* `include file "ALU.v" cannot be read
-"../source/CPU_top.v", 23: 
+"../source/CPU_top.v", 4: 
 
 *Error* `include file "Control_unit.v" cannot be read
-"../source/CPU_top.v", 24: 
+"../source/CPU_top.v", 5: 
 
 *Error* `include file "Data_MEM.v" cannot be read
-"../source/CPU_top.v", 25: 
+"../source/CPU_top.v", 6: 
 
 *Error* `include file "PC.v" cannot be read
-"../source/CPU_top.v", 26: 
+"../source/CPU_top.v", 7: 
 
 *Error* `include file "PC_next.v" cannot be read
-"../source/CPU_top.v", 27: 
+"../source/CPU_top.v", 8: 
 
 *Error* `include file "Register_MEM.v" cannot be read
-"../source/CPU_top.v", 28: 
+"../source/CPU_top.v", 9: 
 
 *Error* `include file "IF2ID_reg.v" cannot be read
-"../source/CPU_top.v", 29: 
+"../source/CPU_top.v", 10: 
 
 *Error* `include file "ID2EX_reg.v" cannot be read
-"../source/CPU_top.v", 30: 
+"../source/CPU_top.v", 11: 
 
 *Error* `include file "EX2MEM_reg.v" cannot be read
-"../source/CPU_top.v", 31: 
+"../source/CPU_top.v", 12: 
 
 *Error* `include file "MEM2WB_reg.v" cannot be read
-"../source/CPU_top.v", 32: 
+"../source/CPU_top.v", 13: 
 
 *Error* `include file "Instruction_MEM.v" cannot be read
-"../source/CPU_top.v", 22: 
+"../source/CPU_top.v", 3: 
 
 *Error* `include file "ALU.v" cannot be read
-"../source/CPU_top.v", 23: 
+"../source/CPU_top.v", 4: 
 
 *Error* `include file "Control_unit.v" cannot be read
-"../source/CPU_top.v", 24: 
+"../source/CPU_top.v", 5: 
 
 *Error* `include file "Data_MEM.v" cannot be read
-"../source/CPU_top.v", 25: 
+"../source/CPU_top.v", 6: 
 
 *Error* `include file "PC.v" cannot be read
-"../source/CPU_top.v", 26: 
+"../source/CPU_top.v", 7: 
 
 *Error* `include file "PC_next.v" cannot be read
-"../source/CPU_top.v", 27: 
+"../source/CPU_top.v", 8: 
 
 *Error* `include file "Register_MEM.v" cannot be read
-"../source/CPU_top.v", 28: 
+"../source/CPU_top.v", 9: 
 
 *Error* `include file "IF2ID_reg.v" cannot be read
-"../source/CPU_top.v", 29: 
+"../source/CPU_top.v", 10: 
 
 *Error* `include file "ID2EX_reg.v" cannot be read
-"../source/CPU_top.v", 30: 
+"../source/CPU_top.v", 11: 
 
 *Error* `include file "EX2MEM_reg.v" cannot be read
-"../source/CPU_top.v", 31: 
+"../source/CPU_top.v", 12: 
 
 *Error* `include file "MEM2WB_reg.v" cannot be read
-"../source/CPU_top.v", 32: 
+"../source/CPU_top.v", 13: 
 
 *Error* Module CPU_top redefined
-"../source/CPU_top.v", 34: 
+"../source/CPU_top.v", 15: 
 Highest level modules:
 CPU_top_tb
 

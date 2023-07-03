@@ -53,6 +53,8 @@ module CPU_top(
 
     wire shift_enable, jump_enable;
 
+    wire stall;
+
     Instruction_MEM inst_Instruction(
         .address(inst_addr_IF),
         .instruction(instruction_IF)
@@ -60,6 +62,7 @@ module CPU_top(
     
     IF2ID_reg inst_IF2ID_reg(
         .clk(clk),
+        .stall(stall),
         .instruction_next(instruction_IF),
         .inst_address_next(inst_addr_IF),
         .instruction(instruction_ID),
@@ -91,6 +94,7 @@ module CPU_top(
 
     ID2EX_reg inst_ID2EX_reg(
         .clk(clk),
+        .stall(stall),
         .reset(shift_enable|jump_enable),
         .op_type_next(op_type_ID),
         .address_next(inst_addr_ID),
@@ -115,7 +119,7 @@ module CPU_top(
         .register_2_addr(read_register_2_EX)
     );
     
-    assign reg_write_enable_MEM = ((op_type_WB==ADD)|(op_type_WB==SUB)|(op_type_WB==AND)|(op_type_WB==OR)|(op_type_WB==SLT)|(op_type_WB==LW))? 1'b1: 1'b0;
+    assign reg_write_enable_MEM = ((op_type_MEM==ADD)|(op_type_MEM==SUB)|(op_type_MEM==AND)|(op_type_MEM==OR)|(op_type_MEM==SLT)|(op_type_MEM==LW))? 1'b1: 1'b0;
     assign reg_write_enable_WB = ((op_type_WB==ADD)|(op_type_WB==SUB)|(op_type_WB==AND)|(op_type_WB==OR)|(op_type_WB==SLT)|(op_type_WB==LW))? 1'b1: 1'b0;
 
     always @(*) begin
@@ -129,17 +133,18 @@ module CPU_top(
             alu_data_2 <= ((op_type_EX==LW)|(op_type_EX==SW))? extended_immi_EX: (reg_write_address_WB==read_register_2_EX? reg_write_data: reg_read_data_2_EX);
         end
         2'b10: begin
-            alu_data_1 <= (reg_write_address_MEM==read_register_1_EX)? ((op_type_MEM==LW)? mem_read_data_MEM: alu_result_MEM): reg_read_data_1_EX;
-            alu_data_2 <= ((op_type_EX==LW)|(op_type_EX==SW))? extended_immi_EX: (reg_write_address_MEM==read_register_2_EX? ((op_type_MEM==LW)? mem_read_data_MEM: alu_result_MEM): reg_read_data_2_EX);
+            alu_data_1 <= (reg_write_address_MEM==read_register_1_EX)? alu_result_MEM: reg_read_data_1_EX;
+            alu_data_2 <= ((op_type_EX==LW)|(op_type_EX==SW))? extended_immi_EX: (reg_write_address_MEM==read_register_2_EX? alu_result_MEM: reg_read_data_2_EX);
         end
         2'b11: begin
-            alu_data_1 <= (reg_write_address_MEM==read_register_1_EX)? ((op_type_MEM==LW)? mem_read_data_MEM: alu_result_MEM): (reg_write_address_WB==read_register_1_EX)? reg_write_data: reg_read_data_1_EX;
-            alu_data_2 <= ((op_type_EX==LW)|(op_type_EX==SW))? extended_immi_EX: (reg_write_address_MEM==read_register_2_EX? ((op_type_MEM==LW)? mem_read_data_MEM: alu_result_MEM): (reg_write_address_WB==read_register_2_EX? reg_write_data: reg_read_data_2_EX));
+            alu_data_1 <= (reg_write_address_MEM==read_register_1_EX)? alu_result_MEM: (reg_write_address_WB==read_register_1_EX)? reg_write_data: reg_read_data_1_EX;
+            alu_data_2 <= ((op_type_EX==LW)|(op_type_EX==SW))? extended_immi_EX: (reg_write_address_MEM==read_register_2_EX? alu_result_MEM: (reg_write_address_WB==read_register_2_EX? reg_write_data: reg_read_data_2_EX));
         end
         default: ;
        endcase 
     end
 
+    assign stall = (op_type_EX==LW)&((reg_write_address_EX==read_register_1_ID)|(reg_write_address_EX==read_register_2_ID));
     
     ALU inst_ALU(
         .data_1(alu_data_1),
@@ -177,7 +182,7 @@ module CPU_top(
 
     MEM2WB_reg u_MEM2WB_reg(
         .clk(clk),
-        //.reset(shift_enable|jump_enable),
+        .reset(shift_enable|jump_enable),
         .op_type_next(op_type_MEM),
         .read_data_next(mem_read_data_MEM),
         .alu_result_next(alu_result_MEM),
@@ -215,6 +220,7 @@ module CPU_top(
 
     PC inst_PC(
         .clk(clk),
+        .stall(stall),
         .next_inst_addr(next_inst_addr_IF),
         .inst_addr(inst_addr_IF)
     );

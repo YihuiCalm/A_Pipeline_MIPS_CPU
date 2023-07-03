@@ -14,6 +14,6 @@ verdi:
 	verdi ../sim/CPU_top_tb.v ../source/*.v -ssf CPU_top_tb.fsdb
 
 clean:
-	rm -rf !(makefile)
+	rm -rf !(makefile|signal.rc)
 
 

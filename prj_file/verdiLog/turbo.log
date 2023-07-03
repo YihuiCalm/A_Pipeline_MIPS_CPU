@@ -1,4 +1,2 @@
 Command Line: /home/yihui/synopsys/verdi/verdi/Verdi_O-2018.09-SP2/platform/LINUXAMD64/bin/Novas ../sim/CPU_top_tb.v ../source/ALU.v ../source/Control_unit.v ../source/CPU_top.v ../source/Data_MEM.v ../source/EX2MEM_reg.v ../source/ID2EX_reg.v ../source/IF2ID_reg.v ../source/Instruction_MEM.v ../source/MEM2WB_reg.v ../source/PC_next.v ../source/PC.v ../source/Register_MEM.v -ssf CPU_top_tb.fsdb
 uname(Linux localhost.localdomain 3.10.0-1160.el7.x86_64 #1 SMP Mon Oct 19 16:18:59 UTC 2020 x86_64)
-Disabled AskUser2 Message (Response 0): Close all windows and exit verdi?
-au time 510.045634 12.637471 5.666214 delta 1037934592 1037934592 total 1463021568 1463021568

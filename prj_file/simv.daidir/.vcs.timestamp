@@ -60,16 +60,21 @@
 /home/yihui/synopsys/vcs/vcs/O-2018.09-SP2/linux64/bin/vcs1
 /home/yihui/synopsys/verdi/verdi/Verdi_O-2018.09-SP2//share/PLI/VCS/LINUX64/verdi.tab
 run.log
-44
+58
 sysc_uni_pwd=/home/yihui/Desktop/Digital_Design/Pipeline_MIPS_CPU/prj_file
-XDG_SESSION_ID=31
+XMODIFIERS=@im=ibus
+XDG_VTNR=1
+XDG_SESSION_TYPE=x11
+XDG_SESSION_ID=1
+XDG_SESSION_DESKTOP=gnome-classic
+XDG_SEAT=seat0
 XDG_RUNTIME_DIR=/run/user/1000
-XDG_DATA_DIRS=/home/yihui/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
-VSCODE_IPC_HOOK_CLI=/run/user/1000/vscode-ipc-9df15c5d-8fd9-447e-8436-13eabc7fc2ed.sock
-VSCODE_GIT_IPC_HANDLE=/run/user/1000/vscode-git-4e7ab3c9e8.sock
-VSCODE_GIT_ASKPASS_NODE=/home/yihui/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/node
-VSCODE_GIT_ASKPASS_MAIN=/home/yihui/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/extensions/git/dist/askpass-main.js
-VSCODE_GIT_ASKPASS_EXTRA_ARGS=
+XDG_MENU_PREFIX=gnome-
+XDG_DATA_DIRS=/home/yihui/.local/share/flatpak/exports/share/:/var/lib/flatpak/exports/share/:/usr/local/share/:/usr/share/
+XDG_CURRENT_DESKTOP=GNOME-Classic:GNOME
+XAUTHORITY=/run/gdm/auth-for-yihui-7yentQ/database
+WINDOWPATH=1
+VTE_VERSION=5204
 VMR_MODE_FLAG=64
 VERDI_HOME=/home/yihui/synopsys/verdi/verdi/Verdi_O-2018.09-SP2/
 VCS_MODE_FLAG=64
@@ -79,18 +84,16 @@ VCS_DEPTH=0
 VCS_ARG_ADDED_FOR_TMP=1
 VCS_ARCH_OVERRIDE=linux
 VCS_ARCH=linux64
+USERNAME=yihui
 UNAME=/bin/uname
 TOOL_HOME=/home/yihui/synopsys/vcs/vcs/O-2018.09-SP2/linux64
-TERM_PROGRAM_VERSION=1.79.2
-TERM_PROGRAM=vscode
 SynopsysList=/home/yihui/synopsys
-SSH_CONNECTION=192.168.73.1 7544 192.168.73.133 22
-SSH_CLIENT=192.168.73.1 7544 22
-SELINUX_USE_CURRENT_RANGE=
-SELINUX_ROLE_REQUESTED=
-SELINUX_LEVEL_REQUESTED=
+SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+SSH_AGENT_PID=2564
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/2420,unix/unix:/tmp/.ICE-unix/2420
 SCRNAME=vcs
 SCRIPT_NAME=vcs
+QT_IM_MODULE=ibus
 QT_GRAPHICSSYSTEM_CHECKED=1
 QTLIB=/usr/lib/qt-3.3/lib
 QTINC=/usr/lib/qt-3.3/include
@@ -101,26 +104,37 @@ MAKELEVEL=1
 MAKEFLAGS=
 LESSOPEN=||/usr/bin/lesspipe.sh %s
 LC_ALL=C
+IMSETTINGS_MODULE=none
+IMSETTINGS_INTEGRATE_DESKTOP=yes
 HISTCONTROL=ignoredups
-GIT_ASKPASS=/home/yihui/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/extensions/git/dist/askpass.sh
+GNOME_TERMINAL_SERVICE=:1.107
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/6e0012a1_8efd_4bfd_bdd4_01595059c239
+GNOME_SHELL_SESSION_MODE=classic
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GDM_LANG=en_US.UTF-8
+GDMSESSION=gnome-classic
 DVE_HOME=/home/yihui/synopsys/vcs/vcs/O-2018.09-SP2/gui/dve/
+DESKTOP_SESSION=gnome-classic
+DBUS_STARTER_BUS_TYPE=session
+DBUS_STARTER_ADDRESS=unix:abstract=/tmp/dbus-ZSwkJaWBEi,guid=7de9cb934a8df8055ecf9b4e649ccce9
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-ZSwkJaWBEi,guid=7de9cb934a8df8055ecf9b4e649ccce9
 COLORTERM=truecolor
 0
 16
 1688017041 ../source/MEM2WB_reg.v
 1688016987 ../source/EX2MEM_reg.v
-1688016849 ../source/ID2EX_reg.v
-1687643638 ../source/IF2ID_reg.v
-1683842310 ../source/Register_MEM.v
-1687644793 ../source/PC_next.v
-1687644642 ../source/PC.v
-1683842629 ../source/Data_MEM.v
-1687394441 ../source/Control_unit.v
-1686366682 ../source/ALU.v
-1687647096 ../source/Instruction_MEM.v
-1688063271 ../source/CPU_top.v
+1688365450 ../source/ID2EX_reg.v
+1688328513 ../source/IF2ID_reg.v
+1688330530 ../source/Register_MEM.v
+1688063961 ../source/PC_next.v
+1688328445 ../source/PC.v
+1688063947 ../source/Data_MEM.v
+1688063936 ../source/Control_unit.v
+1688063927 ../source/ALU.v
+1688063955 ../source/Instruction_MEM.v
+1688367614 ../source/CPU_top.v
 1688063293 ../sim/CPU_top_tb.v
-1688062839 .
+1688366562 .
 1551421246 /home/yihui/synopsys/vcs/vcs/O-2018.09-SP2/linux64/lib/vcsdp.tab
 1550753332 /home/yihui/synopsys/verdi/verdi/Verdi_O-2018.09-SP2//share/PLI/VCS/LINUX64/verdi.tab
 4
@@ -128,5 +142,5 @@ COLORTERM=truecolor
 1551421792 /home/yihui/synopsys/vcs/vcs/O-2018.09-SP2/linux64/lib/liberrorinf.so
 1551421768 /home/yihui/synopsys/vcs/vcs/O-2018.09-SP2/linux64/lib/libsnpsmalloc.so
 1551421789 /home/yihui/synopsys/vcs/vcs/O-2018.09-SP2/linux64/lib/libvfs.so
-1688063297 simv.daidir
+1688367622 simv.daidir
 -1 partitionlib

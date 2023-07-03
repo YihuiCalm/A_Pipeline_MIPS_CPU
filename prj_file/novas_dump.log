@@ -162,53 +162,67 @@ maxproc		4096
 (Special)Runtime environment variables:
 
 Runtime environment variables:
-XDG_SESSION_ID=31
-TERM_PROGRAM=vscode
+XDG_VTNR=1
+XDG_SESSION_ID=1
+SSH_AGENT_PID=2564
+DBUS_STARTER_ADDRESS=unix:abstract=/tmp/dbus-ZSwkJaWBEi,guid=7de9cb934a8df8055ecf9b4e649ccce9
 HOSTNAME=localhost.localdomain
-SELINUX_ROLE_REQUESTED=
+IMSETTINGS_INTEGRATE_DESKTOP=yes
 TERM=xterm-256color
+XDG_MENU_PREFIX=gnome-
+VTE_VERSION=5204
 SHELL=/bin/bash
 HISTSIZE=1000
 MAKEFLAGS=
-SSH_CLIENT=192.168.73.1 7544 22
-TERM_PROGRAM_VERSION=1.79.2
-SELINUX_USE_CURRENT_RANGE=
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/6e0012a1_8efd_4bfd_bdd4_01595059c239
 QTDIR=/usr/lib/qt-3.3
 QTINC=/usr/lib/qt-3.3/include
+IMSETTINGS_MODULE=none
 QT_GRAPHICSSYSTEM_CHECKED=1
 USER=yihui
 LS_COLORS=rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:
+GNOME_TERMINAL_SERVICE=:1.107
+SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
 DVE_HOME=/home/yihui/synopsys/vcs/vcs/O-2018.09-SP2/gui/dve/
 MAKELEVEL=1
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/2420,unix/unix:/tmp/.ICE-unix/2420
+USERNAME=yihui
 MFLAGS=
+GNOME_SHELL_SESSION_MODE=classic
 MAIL=/var/spool/mail/yihui
-PATH=/home/yihui/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/bin/remote-cli:/usr/lib/qt-3.3/bin:/usr/local/bin:/usr/bin:/home/yihui/synopsys/vcs/vcs/O-2018.09-SP2//gui/dve/bin:/home/yihui/synopsys/vcs/vcs/O-2018.09-SP2//bin:/home/yihui/synopsys/verdi/verdi/Verdi_O-2018.09-SP2//bin:/home/yihui/synopsys/scl/scl/2018.06/linux64/bin:/usr/local/sbin:/usr/sbin:/home/yihui/synopsys/vcs/vcs/O-2018.09-SP2//gui/dve/bin:/home/yihui/synopsys/vcs/vcs/O-2018.09-SP2//bin:/home/yihui/synopsys/verdi/verdi/Verdi_O-2018.09-SP2//bin:/home/yihui/synopsys/scl/scl/2018.06/linux64/bin:/home/yihui/.local/bin:/home/yihui/bin:/home/yihui/synopsys/vcs/vcs/O-2018.09-SP2//gui/dve/bin:/home/yihui/synopsys/vcs/vcs/O-2018.09-SP2//bin:/home/yihui/synopsys/verdi/verdi/Verdi_O-2018.09-SP2//bin:/home/yihui/synopsys/scl/scl/2018.06/linux64/bin
+PATH=/usr/lib/qt-3.3/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/bin:/sbin:/home/yihui/synopsys/vcs/vcs/O-2018.09-SP2//gui/dve/bin:/home/yihui/synopsys/vcs/vcs/O-2018.09-SP2//bin:/home/yihui/synopsys/verdi/verdi/Verdi_O-2018.09-SP2//bin:/home/yihui/synopsys/scl/scl/2018.06/linux64/bin:/home/yihui/.local/bin:/home/yihui/bin:/home/yihui/synopsys/vcs/vcs/O-2018.09-SP2//gui/dve/bin:/home/yihui/synopsys/vcs/vcs/O-2018.09-SP2//bin:/home/yihui/synopsys/verdi/verdi/Verdi_O-2018.09-SP2//bin:/home/yihui/synopsys/scl/scl/2018.06/linux64/bin
+DESKTOP_SESSION=gnome-classic
+QT_IM_MODULE=ibus
 _=./simv
 VERDI_HOME=/home/yihui/synopsys/verdi/verdi/Verdi_O-2018.09-SP2/
 PWD=/home/yihui/Desktop/Digital_Design/Pipeline_MIPS_CPU/prj_file
+XDG_SESSION_TYPE=x11
 VCS_HOME=/home/yihui/synopsys/vcs/vcs/O-2018.09-SP2/
+XMODIFIERS=@im=ibus
 LANG=en_US.UTF-8
+GDM_LANG=en_US.UTF-8
 VCS_ARCH_OVERRIDE=linux
-VSCODE_GIT_ASKPASS_EXTRA_ARGS=
-SELINUX_LEVEL_REQUESTED=
 LM_LICENSE_FILE=27000@localhost.localdomain
+GDMSESSION=gnome-classic
 HISTCONTROL=ignoredups
-SHLVL=6
+DBUS_STARTER_BUS_TYPE=session
+SHLVL=3
+XDG_SEAT=seat0
 HOME=/home/yihui
 SynopsysList=/home/yihui/synopsys
-VSCODE_GIT_ASKPASS_MAIN=/home/yihui/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/extensions/git/dist/askpass-main.js
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
 LOGNAME=yihui
+XDG_SESSION_DESKTOP=gnome-classic
 QTLIB=/usr/lib/qt-3.3/lib
-VSCODE_GIT_IPC_HANDLE=/run/user/1000/vscode-git-4e7ab3c9e8.sock
-SSH_CONNECTION=192.168.73.1 7544 192.168.73.133 22
-XDG_DATA_DIRS=/home/yihui/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
-VSCODE_IPC_HOOK_CLI=/run/user/1000/vscode-ipc-9df15c5d-8fd9-447e-8436-13eabc7fc2ed.sock
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-ZSwkJaWBEi,guid=7de9cb934a8df8055ecf9b4e649ccce9
+XDG_DATA_DIRS=/home/yihui/.local/share/flatpak/exports/share/:/var/lib/flatpak/exports/share/:/usr/local/share/:/usr/share/
 LESSOPEN=||/usr/bin/lesspipe.sh %s
-BROWSER=/home/yihui/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/bin/helpers/browser.sh
-GIT_ASKPASS=/home/yihui/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/extensions/git/dist/askpass.sh
-VSCODE_GIT_ASKPASS_NODE=/home/yihui/.vscode-server/bin/695af097c7bd098fbf017ce3ac85e09bbc5dda06/node
+WINDOWPATH=1
+DISPLAY=:0
 XDG_RUNTIME_DIR=/run/user/1000
+XDG_CURRENT_DESKTOP=GNOME-Classic:GNOME
 COLORTERM=truecolor
+XAUTHORITY=/run/gdm/auth-for-yihui-7yentQ/database
 VCS_HEAP_EXEC=true
 VCS_PATHMAP_PRELOAD_DONE=1
 VCS_STACK_EXEC=true
@@ -218,65 +232,65 @@ DVE=/home/yihui/synopsys/vcs/vcs/O-2018.09-SP2//gui/dve
 SPECMAN_OUTPUT_TO_TTY=1
 Runtime command line arguments:
 argv[0]=./simv
-220 profile - 100
-          CPU/Mem usage: 0.020 sys,  0.130 user,  254.54M mem
-221 Thu Jun 29 11:28:20 2023
-222 pliAppInit
-223 FSDB_GATE is set.
-224 FSDB_RTL is set.
-225 Enable Parallel Dumping.
-226 pliAppMiscSet: New Sim Round
-227 pliEntryInit
-228 LIBSSCORE=found /home/yihui/synopsys/verdi/verdi/Verdi_O-2018.09-SP2//share/PLI/lib/LINUXAMD64/libsscore_vcs201809.so through $NOVAS_HOME setting.
-229 FSDB Dumper for VCS, Release Verdi_O-2018.09-SP2, Linux x86_64/64bit, 02/21/2019
-230 (C) 1996 - 2019 by Synopsys, Inc.
-231 sps_call_fsdbDumpfile_main at 0 : ../sim/CPU_top_tb.v(29)
-232 argv[0]: (CPU_top_tb.fsdb)
-233 *Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
-234 *Verdi* : Create FSDB file 'CPU_top_tb.fsdb'
-235 compile option from '/home/yihui/Desktop/Digital_Design/Pipeline_MIPS_CPU/prj_file/simv.daidir/vcs_rebuild'.
-236   "vcs '-R' '-full64' '-fsdb' '+define+FSDB' '+incdir+../source' '.' '-sverilog' '../sim/CPU_top_tb.v' '-l' 'run.log' '-debug_all' 2>&1"
-237 FSDB_VCS_ENABLE_FAST_VC is enable
-238 sps_call_fsdbDumpvars_vd_main at 0 : ../sim/CPU_top_tb.v(30)
-239 argv[0]: (0)
-240 [spi_vcs_vd_ppi_create_root]: no upf option
-241 FSDB dumper cannot dump UPF related power signal ($power_tree): no ppiPowerNetwork.
-242 *Verdi* : Begin traversing the scopes, layer (0).
-243 *Verdi* : End of traversing.
-244 pliAppHDL_DumpVarComplete traverse var: profile - 
+234 profile - 100
+          CPU/Mem usage: 0.030 sys,  0.120 user,  254.50M mem
+235 Mon Jul  3 00:00:22 2023
+236 pliAppInit
+237 FSDB_GATE is set.
+238 FSDB_RTL is set.
+239 Enable Parallel Dumping.
+240 pliAppMiscSet: New Sim Round
+241 pliEntryInit
+242 LIBSSCORE=found /home/yihui/synopsys/verdi/verdi/Verdi_O-2018.09-SP2//share/PLI/lib/LINUXAMD64/libsscore_vcs201809.so through $NOVAS_HOME setting.
+243 FSDB Dumper for VCS, Release Verdi_O-2018.09-SP2, Linux x86_64/64bit, 02/21/2019
+244 (C) 1996 - 2019 by Synopsys, Inc.
+245 sps_call_fsdbDumpfile_main at 0 : ../sim/CPU_top_tb.v(29)
+246 argv[0]: (CPU_top_tb.fsdb)
+247 *Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+248 *Verdi* : Create FSDB file 'CPU_top_tb.fsdb'
+249 compile option from '/home/yihui/Desktop/Digital_Design/Pipeline_MIPS_CPU/prj_file/simv.daidir/vcs_rebuild'.
+250   "vcs '-R' '-full64' '-fsdb' '+define+FSDB' '+incdir+../source' '.' '-sverilog' '../sim/CPU_top_tb.v' '-l' 'run.log' '-debug_all' 2>&1"
+251 FSDB_VCS_ENABLE_FAST_VC is enable
+252 sps_call_fsdbDumpvars_vd_main at 0 : ../sim/CPU_top_tb.v(30)
+253 argv[0]: (0)
+254 [spi_vcs_vd_ppi_create_root]: no upf option
+255 FSDB dumper cannot dump UPF related power signal ($power_tree): no ppiPowerNetwork.
+256 *Verdi* : Begin traversing the scopes, layer (0).
+257 *Verdi* : End of traversing.
+258 pliAppHDL_DumpVarComplete traverse var: profile - 
           CPU/Mem usage: 0.040 sys,  0.130 user,  350.95M mem
-                   incr: 0.010 sys,  0.000 user,  8.88M mem
-                   accu: 0.010 sys,  0.000 user,  8.88M mem
-              accu incr: 0.010 sys,  0.000 user,  8.88M mem
+                   incr: 0.000 sys,  0.010 user,  8.89M mem
+                   accu: 0.000 sys,  0.010 user,  8.89M mem
+              accu incr: 0.000 sys,  0.010 user,  8.89M mem
 
-          Count usage: 131 var,  86 idcode,  36 callback
-                 incr: 131 var,  86 idcode,  36 callback
-                 accu: 131 var,  86 idcode,  36 callback
-            accu incr: 131 var,  86 idcode,  36 callback
-245 Thu Jun 29 11:28:20 2023
-246 pliAppHDL_DumpVarComplete: profile - 
+          Count usage: 135 var,  87 idcode,  35 callback
+                 incr: 135 var,  87 idcode,  35 callback
+                 accu: 135 var,  87 idcode,  35 callback
+            accu incr: 135 var,  87 idcode,  35 callback
+259 Mon Jul  3 00:00:22 2023
+260 pliAppHDL_DumpVarComplete: profile - 
           CPU/Mem usage: 0.040 sys,  0.130 user,  352.01M mem
                    incr: 0.000 sys,  0.000 user,  1.05M mem
-                   accu: 0.010 sys,  0.000 user,  9.94M mem
+                   accu: 0.000 sys,  0.010 user,  9.94M mem
               accu incr: 0.000 sys,  0.000 user,  1.05M mem
 
-          Count usage: 131 var,  86 idcode,  36 callback
+          Count usage: 135 var,  87 idcode,  35 callback
                  incr: 0 var,  0 idcode,  0 callback
-                 accu: 131 var,  86 idcode,  36 callback
+                 accu: 135 var,  87 idcode,  35 callback
             accu incr: 0 var,  0 idcode,  0 callback
-247 Thu Jun 29 11:28:20 2023
-248 sps_call_fsdbDumpon_vd_main at 0 : ../sim/CPU_top_tb.v(31)
-249 *Verdi* : fsdbDumpon - All FSDB files at 0 ps.
-250 sps_call_fsdbDumpoff_vd_main at 910000 : ../sim/CPU_top_tb.v(33)
-251 *Verdi* : fsdbDumpoff - All FSDB files at 910,000 ps.
-252 End of simulation at 910000
-253 Thu Jun 29 11:28:20 2023
-254 Begin FSDB profile info:
-255 FSDB Writer : bc1(95) bcn(626) mtf/stf(0/0)
-FSDB Writer elapsed time : flush(0.002724) io wait(0.000000) theadpool wait(0.000000) target functin(0.000000)
+261 Mon Jul  3 00:00:22 2023
+262 sps_call_fsdbDumpon_vd_main at 0 : ../sim/CPU_top_tb.v(31)
+263 *Verdi* : fsdbDumpon - All FSDB files at 0 ps.
+264 sps_call_fsdbDumpoff_vd_main at 910000 : ../sim/CPU_top_tb.v(33)
+265 *Verdi* : fsdbDumpoff - All FSDB files at 910,000 ps.
+266 End of simulation at 910000
+267 Mon Jul  3 00:00:22 2023
+268 Begin FSDB profile info:
+269 FSDB Writer : bc1(93) bcn(585) mtf/stf(0/0)
+FSDB Writer elapsed time : flush(0.002651) io wait(0.000000) theadpool wait(0.000000) target functin(0.000000)
 FSDB Writer cpu time : MT Compression : 0
-256 End FSDB profile info
-257 Parallel profile    -  Flush:5 Expand:0 ProduceWait:0 ConsumerWait:0 BlockUsed:0
-258                        ProduceTime:0.180187533 ConsumerTime:0.000000000 Buffer:64MB
-259 SimExit
-260 Sim process exit
+270 End FSDB profile info
+271 Parallel profile    -  Flush:5 Expand:0 ProduceWait:0 ConsumerWait:0 BlockUsed:0
+272                        ProduceTime:0.182024791 ConsumerTime:0.000000000 Buffer:64MB
+273 SimExit
+274 Sim process exit

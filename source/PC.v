@@ -3,12 +3,16 @@
 module PC(
 	input clk,
 	input [31:0] next_inst_addr,
+	input stall,
 
 	output reg [31:0] inst_addr = 0
     );
     
     always @(posedge clk) begin 
-    	inst_addr <= next_inst_addr;
+		if (stall) begin
+			inst_addr <= inst_addr;
+		end
+    	else inst_addr <= next_inst_addr;
     end
     
 endmodule
