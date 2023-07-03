@@ -402,7 +402,8 @@ mem[7] = 32'h10810001; // beq $4, $1, 1
 mem[8] = 32'h08000018; // j 6
 mem[9] = 32'h08000024; // j 9
 ```
-The program will end in a dead loop. The simulation result is as followed:  
+
+The makefile is at [prj_file](https://github.com/YihuiCalm/A_Pipeline_MIPS_CPU/tree/main/prj_file), with the command of `make all`, you can compile with VCS and run the simulation with Verdi. The program will end in a dead loop. The simulation result is as followed:  
 ![Screenshot (16)](https://github.com/YihuiCalm/Pipeline_MIPS_CPU/assets/96307958/f2c03874-956b-4bb9-9a84-0ebfb09c6e58)
 
 
