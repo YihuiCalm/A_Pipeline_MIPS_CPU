@@ -389,7 +389,7 @@ endmodule
 ```
 ***
 ## **Simulation**
-The testbench MIPS code stored in `Instruction_MEM` module is as followed:
+The testbench MIPS code is as followed:
 ```verilog
 mem[0] = 32'h8C010000; // lw $1 0($0)
 mem[1] = 32'h8C020001; // lw $2 1($0)
@@ -404,7 +404,40 @@ mem[9] = 32'h08000024; // j 9
 ```
 
 The makefile is at [prj_file](https://github.com/YihuiCalm/A_Pipeline_MIPS_CPU/tree/main/prj_file), with the command of `make all`, you can compile with VCS and run the simulation with Verdi. The program will end in a dead loop. The simulation result is as followed:  
-![Screenshot (16)](https://github.com/YihuiCalm/Pipeline_MIPS_CPU/assets/96307958/f2c03874-956b-4bb9-9a84-0ebfb09c6e58)
+![Screenshot (16)](https://github.com/YihuiCalm/Pipeline_MIPS_CPU/assets/96307958/f2c03874-956b-4bb9-9a84-0ebfb09c6e58)  
+The testbench output:
+```
+=========================================TESTBENCH===========================================
+*********************************************************************************************
+|        IF        |       ID        |       EX        |       MEM        |       WB        |
+*********************************************************************************************
+|                  |                 |                 |                  |                 |
+|  lw $1 0($0)     |       ---       |       ---       |       ---        |       ---       |
+|  lw $2 1($0)     |       LW        |       ---       |       ---        |       ---       |
+|  add $3, $1, $2  |       LW        |       LW        |       ---        |       ---       |
+|-------STALL------|------STALL------|       LW        |       LW         |       ---       |
+|  add $4, $3, $0  |       ADD       |       ---       |       LW         |       LW        |
+|  and $5, $3, $2  |       ADD       |       ADD       |       ---        |       LW        |
+|  or $6, $3, $2   |       AND       |       ADD       |       ADD        |       ---       |
+|  sub $4, $4, $1  |       OR        |       AND       |       ADD        |       ADD       |
+|  beq $4, $1, 1   |       SUB       |       OR        |       AND        |       ADD       |
+|  j 6             |       BEQ       |       SUB       |       OR         |       AND       |
+|  j 9             |       J         |       BEQ       |       SUB        |       OR        |
+|  j 9             |       J         |       J         |       BEQ        |       SUB       |
+|-------FLUSH------|------FLUSH------|------FLUSH------|-------FLUSH------|------FLUSH------|
+|  sub $4, $4, $1  |       ---       |       ---       |       ---        |       ---       |
+|  beq $4, $1, 1   |       SUB       |       ---       |       ---        |       ---       |
+|  j 6             |       BEQ       |       SUB       |       ---        |       ---       |
+|  j 9             |       J         |       BEQ       |       SUB        |       ---       |
+|-------FLUSH------|------FLUSH------|------FLUSH------|-------FLUSH------|------FLUSH------|
+|  j 9             |       ---       |       ---       |       ---        |       ---       |
+|  j 9             |       J         |       ---       |       ---        |       ---       |
+|  j 9             |       ---       |       J         |       ---        |       ---       |
+|-------FLUSH------|------FLUSH------|------FLUSH------|-------FLUSH------|------FLUSH------|
+|  j 9             |       ---       |       ---       |       ---        |       ---       |
+|  j 9             |       J         |       ---       |       ---        |       ---       |
+==========================================FINISH=============================================
+```
 
 
 
