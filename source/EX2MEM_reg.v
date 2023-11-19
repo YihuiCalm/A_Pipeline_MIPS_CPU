@@ -1,6 +1,7 @@
 module EX2MEM_reg (
     input clk,
-    input reset,
+    input rst_n,
+    input flush,
     input [3:0] op_type_next,
     input [31:0] shifted_address_next,
     input [31:0] alu_result_next,
@@ -8,16 +9,16 @@ module EX2MEM_reg (
     input [4:0] write_reg_address_next,
     input [31:0] jump_address_next,
 
-    output reg [3:0] op_type = 0,
-    output reg [31:0] shifted_address = 0,
-    output reg [31:0] alu_result = 0,
-    output reg [31:0] write_mem_data = 0,                          
-    output reg [4:0] write_reg_address = 0,
-    output reg [31:0] jump_address = 0
+    output reg [3:0] op_type,
+    output reg [31:0] shifted_address,
+    output reg [31:0] alu_result,
+    output reg [31:0] write_mem_data,                          
+    output reg [4:0] write_reg_address,
+    output reg [31:0] jump_address
 );
 
     always @(posedge clk) begin
-        if (reset) begin
+        if (flush|(!rst_n)) begin
             op_type <= 0;
             shifted_address <= 0;
             alu_result <= 0;

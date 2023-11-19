@@ -1,6 +1,8 @@
 module ID2EX_reg (
     input clk,
-    input reset,
+    input rst_n,
+    input flush,
+    input stall,
     input [3:0] op_type_next,
     input [31:0] address_next,
     input [31:0] register_1_next,
@@ -10,22 +12,21 @@ module ID2EX_reg (
     input [4:0] reg_write_address_2_next,
     input [31:0] jump_address_next,
     input [4:0] register_1_addr_next, register_2_addr_next,
-    input stall,
 
-    output reg [3:0] op_type = 0,
-    output reg [31:0] address = 0,
-    output reg [31:0] register_1 = 0,
-    output reg [31:0] register_2 = 0,
-    output reg [31:0] extended_immi = 0,
-    output reg [4:0] reg_write_address_1 = 0,
-    output reg [4:0] reg_write_address_2 = 0,
-    output reg [31:0] jump_address = 0,
-    output reg [4:0] register_1_addr = 0, 
-    output reg [4:0] register_2_addr = 0
+    output reg [3:0] op_type,
+    output reg [31:0] address,
+    output reg [31:0] register_1,
+    output reg [31:0] register_2,
+    output reg [31:0] extended_immi,
+    output reg [4:0] reg_write_address_1,
+    output reg [4:0] reg_write_address_2,
+    output reg [31:0] jump_address,
+    output reg [4:0] register_1_addr, 
+    output reg [4:0] register_2_addr
 );
     
     always @(posedge clk) begin
-        if (reset|stall) begin
+        if ((!rst_n)|flush|stall) begin
             op_type <= 0;
             address <= 0;
             register_1 <= 0;

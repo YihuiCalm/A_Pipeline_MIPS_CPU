@@ -7,7 +7,6 @@ module Control_unit(
 	output reg [3:0] op_type
     );
     
-    
     always @(*) begin
         case (instruction[31:26])
             6'b000000: begin
